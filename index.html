@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+        <link rel="stylesheet"
+            href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="app">
+            <h1>CSS Quirks</h1>
+            <section>
+                <div class="quirk">
+                    <h2>#1</h2>
+                    <p><b>Quirk</b> If you have two div and one of them have text and other is empty. They do not align</p>
+                    <div class="box-1">text</div>
+                    <div class="box-2"></div>
+                </div>
+
+                <div class="reason">
+                    <p><b>Reason</b> is default
+                        <code>vertical-align: top;</code>
+                        property, if box does not have contents
+                        <code>vertical-align: top;</code>
+                        takes the baseline of parent container.
+                    </p>
+                    <div class="box-1"
+                        style='vertical-align: bottom;'>text</div>
+                    <div class="box-2"
+                        style='vertical-align: bottom;'></div>
+            </section>
+        </div>
+        </div>
+    </body>
+
+</html>
